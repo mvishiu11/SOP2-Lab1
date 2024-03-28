@@ -1,1 +1,7 @@
 .vscode
+*.o
+*.exe
+client
+server
+server_notify
+client_notify

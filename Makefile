@@ -10,3 +10,6 @@ server: server.o
 
 client: client.o
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+server_notify: server_notify.o
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)

@@ -39,10 +39,10 @@ void process_message(char *buffer, mqd_t mq, const char *operation) {
     if (strcmp(operation, "sum") == 0) {
         result = num1 + num2;
     } else if (strcmp(operation, "div") == 0) {
-        if (num2 != 0) {  // Prevent division by zero
+        if (num2 != 0) {
             result = num1 / num2;
         } else {
-            result = 0;  // Could also set an error flag or value here
+            result = 0;
         }
     } else if (strcmp(operation, "mod") == 0) {
         if (num2 != 0) {
@@ -149,7 +149,6 @@ int main() {
         }
     }
 
-    // Clean up and exit
     cleanup();
     return 0;
 }

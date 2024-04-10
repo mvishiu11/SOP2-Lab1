@@ -6,5 +6,6 @@ server
 server_notify
 client_notify
 l3-1
-l3-2
+l3-2_server
+l3-2_client
 log.txt

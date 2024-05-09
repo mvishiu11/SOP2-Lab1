@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-std=gnu99 -Wall -pthread -lrt
+CFLAGS=-std=gnu99 -Wall
 LDFLAGS=-pthread -lrt 
 
 l3-1: l3-1.o
